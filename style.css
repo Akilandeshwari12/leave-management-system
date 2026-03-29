@@ -1,0 +1,114 @@
+body{
+  margin:0;
+  font-family:Arial, sans-serif;
+
+  /* FIXED PART */
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:flex-start;
+  padding-top:50px;
+
+  /* Animated gradient background */
+  background: linear-gradient(-45deg, #00c6ff, #0072ff, #ff00cc, #ff7700);
+  background-size: 400% 400%;
+  animation: gradientBG 15s ease infinite;
+}
+@keyframes gradientBG {
+  0%{background-position:0% 50%;}
+  50%{background-position:100% 50%;}
+  100%{background-position:0% 50%;}
+}
+.center-box{
+  width:500px;
+  min-height:400px;
+  padding:30px;
+  text-align:center;
+  background:#ffffff;
+  border-radius:10px;
+  box-shadow:0 0 15px rgba(0,0,0,0.2);
+
+  /* Box Animation */
+  opacity:0;
+  transform: translateY(-50px);
+  animation: boxFadeIn 1s forwards;
+}
+@keyframes boxFadeIn{
+  to{
+    opacity:1;
+    transform: translateY(0);
+  }
+}
+input, select{
+  width:90%;
+  padding:8px;
+  margin:8px 0;
+  border-radius:5px;
+  border:1px solid #ccc;
+}
+.btn, input[type="submit"]{
+  background:green;
+  color:#fff;
+  padding:10px;
+  border:none;
+  border-radius:5px;
+  cursor:pointer;
+}
+.btn:hover, input[type="submit"]:hover{
+  background:darkgreen;
+}
+.animated-option{
+  display:flex;
+  align-items:center;
+  justify-content:flex-start;
+  gap:10px;
+  width:fit-content;
+  margin:8px auto;
+  cursor:pointer;
+}
+input:checked + span{
+  color:green;
+  font-weight:bold;
+}
+table{
+  width:100%;
+  border-collapse:collapse;
+  margin-top:15px;
+}
+th, td{
+  border:1px solid #ccc;
+  padding:10px;
+  text-align:center;
+}
+th{
+  background:#0072ff;
+  color:white;
+}
+tr:nth-child(even){
+  background:#f2f2f2;
+}
+/* Row Animation */
+table tr{
+  opacity:0;
+  transform: translateX(-50px);
+  animation: rowFadeIn 0.5s forwards;
+}
+@keyframes rowFadeIn{
+  to{
+    opacity:1;
+    transform: translateX(0);
+  }
+}
+.back-btn{
+  display:inline-block;
+  margin-top:15px;
+  text-decoration:none;
+  color:white;
+  background:#333;
+  padding:6px 12px;
+  border-radius:5px;
+  font-size:14px;
+}
+.back-btn:hover{
+  background:black;
+}

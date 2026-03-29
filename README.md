@@ -43,7 +43,7 @@ This is a web-based Leave Management System developed to manage student and staf
 3. Start Apache and MySQL
 4. Open phpMyAdmin and import `leavedb.sql`
 5. Open browser and type:
-   http://localhost/leave-management-system
+   http://localhost/leave_project
 
 ## Screenshots
 

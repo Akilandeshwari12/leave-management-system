@@ -46,6 +46,7 @@ This is a web-based Leave Management System developed to manage student and staf
    http://localhost/leave_project
 6. open leavedb database:
    http://localhost/phpmyadmin
+
 ## Screenshots
 
 ![Login](Screenshot%202026-03-28%20205821.png)
